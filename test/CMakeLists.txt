@@ -10,8 +10,10 @@ add_executable(${BINARY} main.cpp)
 # Add Testing Libraries to Binary
 target_link_libraries(${BINARY} PUBLIC ${LIBS}) 
 
-# Add GTest Library to binary
-target_link_libraries(${BINARY} PUBLIC /usr/local/lib/libgtest.a)
+# Create dependency of ${BINARY} on googletest
+add_dependencies(${BINARY} googletest)
+
+target_link_libraries(${BINARY} PUBLIC gtest gtest_main pthread)
 
 # Name test cases
 add_test(NAME ${BINARY} COMMAND ${BINARY})
