@@ -1,0 +1,7 @@
+language: cpp
+
+script: 
+- ./scripts/test.sh
+
+notifications:
+    email: true
