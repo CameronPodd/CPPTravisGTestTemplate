@@ -1,7 +1,8 @@
 # Set some variables
 set(BINARY ${CMAKE_PROJECT_NAME}_test)
-set(SRCS Formula-test.cpp)
-set(LIBS Formula)
+# Add Test sources and their corresponding source libraries
+# set(SRCS Formula-test.cpp)
+# set(LIBS Formula)
 
 # Create the tests as an executable
 add_executable(${BINARY} ${SRCS})
