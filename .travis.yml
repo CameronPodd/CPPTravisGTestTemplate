@@ -1,7 +1,7 @@
 language: cpp
 
 script: 
-- ./scripts/test.sh
+- sh ./scripts/test.sh
 
 notifications:
     email: true
