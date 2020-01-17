@@ -4,4 +4,4 @@ script:
 - sh ./scripts/test.sh
 
 notifications:
-    email: true
+    email: false
